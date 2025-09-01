@@ -2,7 +2,7 @@
 function createNavbar() {
   return `
     <nav>
-      <img src="/assets/dougfir.jpg" alt="Home" onclick="window.location.href='/'"/>
+      <img src="/assets/dougfir.JPG" alt="Home" onclick="window.location.href='/'"/>
       <h1>Title</h1>
     </nav>
   `;
