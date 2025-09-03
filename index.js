@@ -176,10 +176,13 @@ function createS3Upload() {
   return { setupDragAndDrop };
 }
 
-// Initialize file upload functionality
+// Initialize file upload functionality (development mode only)
 document.addEventListener("DOMContentLoaded", () => {
-  const uploader = createS3Upload();
-  uploader.setupDragAndDrop();
+  // Only enable file upload in development mode
+  if (window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1") {
+    const uploader = createS3Upload();
+    uploader.setupDragAndDrop();
+  }
 });
 
 // Enlarge image on click functionality

@@ -39,7 +39,7 @@ nav img {
 }
 
 main {
-  padding: 0 20vw;
+  padding: 0 20vw 50px 20vw;
 }
 
 .about {
@@ -82,7 +82,24 @@ main {
   font-size: 40px;
   font-weight: 800;
   color: var(--text-color);
-  margin: 80px 0 20px 0;
+  margin: 80px 0 0 0;
+}
+
+h2 {
+  margin: 0;
+}
+
+.post-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+hr {
+  margin: 0 0 20px 0;
+  height: 1px;
+  background-color: var(--border-color);
+  border: none;
 }
 
 .post-image,
@@ -90,6 +107,15 @@ main {
   width: 100%;
   border-radius: 5px;
   cursor: pointer;
+}
+
+.post-container p {
+  margin: 0;
+}
+
+.meta-container {
+  display: flex;
+  align-items: center;
 }
 
 .clicked-image-overlay {
@@ -111,4 +137,17 @@ main {
   max-height: 95vh;
   object-fit: contain;
   border-radius: 5px;
+}
+
+@media screen and (max-width: 768px) {
+  .about {
+    margin: 40px 0;
+  }
+  main {
+    padding: 0 3vw;
+  }
+  .post-title {
+    font-size: 25px;
+    margin: 20px 0;
+  }
 }
