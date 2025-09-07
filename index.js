@@ -3,7 +3,7 @@ function createNavbar() {
   return `
     <nav>
       <img src="https://clinzy-blog-assts.s3.us-west-2.amazonaws.com/dougfir.JPG" alt="Home" onclick="window.location.href='/blog-hike'"/>
-      <h1>Title</h1>
+      <h1>Hikeblogthing</h1>
     </nav>
   `;
 }
@@ -179,7 +179,10 @@ function createS3Upload() {
 // Initialize file upload functionality (development mode only)
 document.addEventListener("DOMContentLoaded", () => {
   // Only enable file upload in development mode
-  if (window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1") {
+  if (
+    window.location.hostname === "localhost" ||
+    window.location.hostname === "127.0.0.1"
+  ) {
     const uploader = createS3Upload();
     uploader.setupDragAndDrop();
   }
