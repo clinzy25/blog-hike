@@ -152,6 +152,13 @@ main ul {
   margin: 50px 0; 
 }
 
+.max-height-image {
+  max-height: 800px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
 @media screen and (max-width: 768px) {
   .about {
     margin: 40px 0;
