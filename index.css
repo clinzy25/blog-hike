@@ -118,6 +118,10 @@ hr {
   align-items: center;
 }
 
+.meta-container a {
+  white-space: nowrap;
+}
+
 .clicked-image-overlay {
   position: fixed;
   top: 0;
@@ -222,17 +226,16 @@ main ul {
   justify-content: flex-start;
   padding: 18px 22px 16px 18px;
   box-sizing: border-box;
-  border-bottom-left-radius: 18px;
-  border-bottom-right-radius: 18px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
   transition: background 0.18s;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1000px) {
   .posts-cards {
-    gap: 18px;
+    gap: 10px;
   }
   .post-card {
-    width: 90vw;
     height: 250px;
   }
   .post-card-overlay {
