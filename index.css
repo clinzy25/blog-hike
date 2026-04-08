@@ -39,7 +39,7 @@ nav img {
 }
 
 main {
-  padding: 0 20vw 50px 20vw;
+  padding: 50px 20vw;
 }
 
 .about {
@@ -169,6 +169,17 @@ main ul {
   gap: 20px;
   justify-content: center;
   margin: 40px 0;
+}
+
+.posts-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.posts-list li{
+  border-top: 1px solid var(--border-color);
+  padding: 15px 0 15px 40px;
 }
 
 .post-card {

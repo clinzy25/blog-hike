@@ -3,7 +3,7 @@ function createNavbar() {
   return `
     <nav>
       <img src="https://clinzy-blog-assts.s3.us-west-2.amazonaws.com/dougfir.JPG" alt="Home" onclick="window.location.href='/blog-hike'"/>
-      <h1>Hikeblogthing</h1>
+      <h1>man in woods</h1>
     </nav>
   `;
 }
